@@ -5,8 +5,17 @@
     box-sizing: border-box;
 }
 
-
 .container {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(247, 84, 19, 0.6), rgba(134, 24, 236, 0.5)), url(../img/a-store-with-many-electronic-devices-on-display-photo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.advertise-container {
+    margin-top: 150px;
     width: 100%;
     min-height: 100vh;
     background-image: linear-gradient(42deg, #524bff, #a35fc1, #c77683, #db903d);
@@ -23,6 +32,15 @@
     height: 80vh;
     display: flex;
     gap: 0px;
+}
+
+.advertise {
+    font-family: sans-serif;
+    color: #000;
+    width: 100%;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 40px;
 }
 
 .homepage-content .left-content {
@@ -62,10 +80,31 @@
 }
 
 .homepage-content .right-content .homepage-cost {
+    display: flex;
+    justify-content: start;
+    text-align: center;
+}
+
+.homepage-content .right-content .homepage-cost .discount-cost {
     font-size: 30px;
     margin-bottom: 15px;
     color: #000;
     text-shadow: 3px 3px #d15493;
+}
+
+.homepage-content .right-content .homepage-cost .real-cost {
+    font-size: 19px;
+    color: gray;
+    text-decoration: line-through;
+    margin-top: 9px;
+    margin-left: 10px;
+}
+
+.homepage-content .right-content .homepage-cost .discount-percent {
+    font-size: 15px;
+    margin-top: 9px;
+    margin-left: 5px;
+    color: rgb(255, 0, 0);
 }
 
 .homepage-content .right-content .homepage-subtitle {
@@ -78,6 +117,7 @@
 
 .homepage-content .right-content .btn-homepage {
     margin-top: 1px;
+    color: #fff;
     cursor: pointer;
     padding: 7px 9px;
     border-radius: 3px;
