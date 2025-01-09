@@ -1,0 +1,48 @@
+.footer-container {
+    background-color: white;
+    margin-top: 200px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+}
+
+.column h2 {
+    font-size: 19px;
+}
+
+.column p {
+    font-size: 11px;
+    line-height: 25px;
+}
+
+.column .footer-subtext {
+    font-size: 13px;
+    line-height: 25px;
+    margin-top: 7px;
+}
+
+.column .footer-subtitle {
+    font-size: 19px;
+    margin-bottom: 7px;
+}
+
+.footer-horizontal-line {
+    border: 1px solid rgb(255, 0, 0);
+    width: 110px;
+}
+
+.footer-title {
+    display: flex;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer-title img {
+    width: 40px;
+    margin-right: 10px;
+}
