@@ -1,6 +1,6 @@
 .footer-container {
     background-color: white;
-    margin-top: 200px;
+    margin-top: 150px;
 }
 
 .row {
@@ -16,6 +16,19 @@
 .column p {
     font-size: 11px;
     line-height: 25px;
+}
+
+.icon-media {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.icon-media img {
+    width: 20px;
+    margin: 0 5px;
+    cursor: pointer;
 }
 
 .column .footer-subtext {

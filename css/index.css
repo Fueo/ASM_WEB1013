@@ -1,9 +1,10 @@
 * {
     margin: 0%;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto", serif;
     box-sizing: border-box;
 }
+
 
 .container {
     width: 100%;
@@ -11,5 +12,77 @@
     background-image: linear-gradient(42deg, #524bff, #a35fc1, #c77683, #db903d);
     background-size: cover;
     background-position: center;
-    padding: 10px 8%;
+    padding: 2px 6%;
+}
+
+.homepage-content {
+    margin-top: 60px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    gap: 0px;
+}
+
+.homepage-content .left-content {
+    display: inline;
+    padding: 0;
+    margin-left: 30px;
+    border: 0;
+    max-width: 70%;
+}
+
+.homepage-content .left-content img {
+    width: 600px;
+}
+
+.homepage-content .left-content p {
+    position: absolute;
+    font-weight: 600;
+    text-shadow: 1px 1px #d15493;
+    margin-top: -100px;
+    margin-left: 150px;
+}
+
+.homepage-content .right-content {
+    display: inline;
+    margin: auto;
+    height: 40%;
+    max-width: 50%;
+    text-align: justify;
+    color: #141414;
+}
+
+.homepage-content .right-content .homepage-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 46px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.homepage-content .right-content .homepage-cost {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #000;
+    text-shadow: 3px 3px #d15493;
+}
+
+.homepage-content .right-content .homepage-subtitle {
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 15px;
+}
+
+
+
+.homepage-content .right-content .btn-homepage {
+    margin-top: 1px;
+    cursor: pointer;
+    padding: 7px 9px;
+    border-radius: 3px;
+    border: none;
+    background: #d15493;
+    font-size: 20px;
+    font-weight: 600;
 }
