@@ -66,6 +66,7 @@ nav {
 
 .left-content ul li form input:focus {
     background: #dbd5d5;
+    border: 2px solid rgb(115, 166, 233);
 }
 
 

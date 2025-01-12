@@ -4,13 +4,13 @@ class MyHeader extends HTMLElement {
         <nav class="header-container">
         <div class="left-content">
             <a href="#" class="logo-content">
-                <img src="img/rb_2148995853.png" class="logo">
+                <img src="img/logo.png" class="logo">
                 <div class="logo-name">Laptop <strong>Fueo</strong></div>
             </a>
             <ul>
                 <li>
                     <div class="dropdown">
-                        <button class="dropbtn"> <img src="img/menu.png">Danh mục sản phẩm</button>
+                        <button class="dropbtn"> <img src="img/headericon3.png">Danh mục sản phẩm</button>
                         <div class="dropdown-content">
                             <a href="#">Laptop Văn phòng</a>
                             <a href="#">Laptop Đồ họa</a>
@@ -26,7 +26,7 @@ class MyHeader extends HTMLElement {
                         <input type="text" placeholder="Nhập sản phẩm cần tìm...">
                         <button class="btn-search">
                             <a href="#search">
-                                <img src="img/search.png">Tìm kiếm
+                                <img src="img/headericon2.png">Tìm kiếm
                             </a>
                         </button>
                     </form>
@@ -35,9 +35,9 @@ class MyHeader extends HTMLElement {
         </div>
         <div class="right-content">
             <ul>
-                <li><a href="#"><img src="img/user.png">Đăng nhập/Đăng ký</a></li>
+                <li><a href="#"><img src="img/headericon4.png">Đăng nhập/Đăng ký</a></li>
             </ul>
-            <button class="btn"><img src="img/grocery-store.png">Giỏ hàng</button>
+            <button class="btn"><img src="img/headericon1.png">Giỏ hàng</button>
         </div>
     </nav>
         `
@@ -52,7 +52,7 @@ class MyFooter extends HTMLElement {
         <div class="row">
             <div class="column">
                 <div class="footer-title">
-                    <img src="img/icon_policy_page_1.webp">
+                    <img src="img/footer1.webp">
                     <div>
                         <h2>CHÍNH SÁCH GIAO HÀNG</h2>
                         <p>Nhận hàng và thanh toán tại nhà</p>
@@ -66,15 +66,15 @@ class MyFooter extends HTMLElement {
                     Tư vấn mua hàng </br>
                     Tuyển dụng</p>
                 <div class="icon-media">
-                    <img src="img/tiktok.png">
-                    <img src="img/youtube.png">
-                    <img src="img/facebook.png">
-                    <img src="img/zalo.png">
+                    <img src="img/footer8.png">
+                    <img src="img/footer5.png">
+                    <img src="img/footer7.png">
+                    <img src="img/footer6.png">
                 </div>
             </div>
             <div class="column">
                 <div class="footer-title">
-                    <img src="img/icon_policy_page_2.webp">
+                    <img src="img/footer2.webp">
                     <div>
                         <h2>ĐỔI TRẢ DỄ DÀNG</h2>
                         <p>1 đổi 1 trong 7 ngày</p>
@@ -97,7 +97,7 @@ class MyFooter extends HTMLElement {
 
             <div class="column">
                 <div class="footer-title">
-                    <img src="img/icon_policy_page_3.webp">
+                    <img src="img/footer3.webp">
                     <div>
                         <h2>GIÁ LUÔN LUÔN RẺ NHẤT</h2>
                         <p>Giá cả hợp lý, nhiều ưu đãi tốt</p>
@@ -113,7 +113,7 @@ class MyFooter extends HTMLElement {
             </div>
             <div class="column">
                 <div class="footer-title">
-                    <img src="img/icon_policy_page_4.webp">
+                    <img src="img/footer4.webp">
                     <div>
                         <h2>HỖ TRỢ NHIỆT TÌNH</h2>
                         <p>Tư vấn, giải đáp mọi thắc mắc</p>
