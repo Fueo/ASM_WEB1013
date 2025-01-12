@@ -27,40 +27,50 @@
     background-image: linear-gradient(orange, purple);
     color: transparent;
     background-clip: text;
-    -webkit-text-stroke-width: 1px;
 }
 
 .advertise-container {
-    margin-top: 50px;
+    margin-top: 40px;
     width: 100%;
     min-height: 100vh;
     background-image: linear-gradient(42deg, #524bff, #a35fc1, #c77683, #db903d);
     background-size: cover;
     background-position: center;
-    padding: 2px 6%;
+    padding: 2px 4%;
+    display: flex;
+    gap: 0px;
+    align-items: center;
 }
 
-.homepage-content {
-    margin-top: 60px;
+.btn-prev,
+.btn-next {
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+    margin-inline: 10px;
+}
+
+.advertise-content {
     background-color: rgba(255, 255, 255, 0.6);
     box-shadow: 3.2px 6.4px 6.4px hsl(0deg 0% 0% / 0.40);
     border-radius: 8px;
     width: 100%;
     height: 80vh;
     display: flex;
+    justify-content: center;
     gap: 0px;
 }
 
-.advertise {
+/* .advertise {
     font-family: sans-serif;
     color: #000;
     width: 100%;
     margin-top: 5px;
     text-align: center;
     font-size: 40px;
-}
+} */
 
-.homepage-content .left-content {
+.advertise-content .left-content {
     display: inline;
     padding: 0;
     margin-left: 30px;
@@ -68,11 +78,11 @@
     max-width: 70%;
 }
 
-.homepage-content .left-content img {
+.advertise-content .left-content img {
     width: 600px;
 }
 
-.homepage-content .left-content p {
+.advertise-content .left-content p {
     position: absolute;
     font-weight: 600;
     text-shadow: 1px 1px #d15493;
@@ -80,7 +90,7 @@
     margin-left: 150px;
 }
 
-.homepage-content .right-content {
+.advertise-content .right-content {
     display: inline;
     margin: auto;
     height: 40%;
@@ -89,27 +99,27 @@
     color: #141414;
 }
 
-.homepage-content .right-content .homepage-title {
+.advertise-content .right-content .advertise-title {
     font-family: 'Poppins', sans-serif;
     font-size: 46px;
     font-weight: 600;
     margin-bottom: 15px;
 }
 
-.homepage-content .right-content .homepage-cost {
+.advertise-content .right-content .advertise-cost {
     display: flex;
     justify-content: start;
     text-align: center;
 }
 
-.homepage-content .right-content .homepage-cost .discount-cost {
+.advertise-content .right-content .advertise-cost .discount-cost {
     font-size: 30px;
     margin-bottom: 15px;
     color: #000;
     text-shadow: 3px 3px #d15493;
 }
 
-.homepage-content .right-content .homepage-cost .real-cost {
+.advertise-content .right-content .advertise-cost .real-cost {
     font-size: 19px;
     color: gray;
     text-decoration: line-through;
@@ -117,14 +127,14 @@
     margin-left: 10px;
 }
 
-.homepage-content .right-content .homepage-cost .discount-percent {
+.advertise-content .right-content .advertise-cost .discount-percent {
     font-size: 15px;
     margin-top: 9px;
     margin-left: 5px;
     color: rgb(255, 0, 0);
 }
 
-.homepage-content .right-content .homepage-subtitle {
+.advertise-content .right-content .advertise-subtitle {
     font-size: 15px;
     line-height: 18px;
     margin-bottom: 15px;
@@ -132,7 +142,7 @@
 
 
 
-.homepage-content .right-content .btn-homepage {
+.advertise-content .right-content .btn-advertise {
     margin-top: 1px;
     color: #fff;
     cursor: pointer;

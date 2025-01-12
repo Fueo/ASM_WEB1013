@@ -35,7 +35,7 @@ class MyHeader extends HTMLElement {
         </div>
         <div class="right-content">
             <ul>
-                <li><a href="#"><img src="img/headericon4.png">Đăng nhập/Đăng ký</a></li>
+                <li><a href="login.html"><img src="img/headericon4.png">Đăng nhập/Đăng ký</a></li>
             </ul>
             <button class="btn"><img src="img/headericon1.png">Giỏ hàng</button>
         </div>
