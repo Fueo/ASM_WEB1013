@@ -14,6 +14,33 @@
     background-position: center;
 }
 
+.product-container .navigation-bar {
+    padding: 1%;
+    color: rgb(219, 219, 219);
+}
+
+.product-container .navigation-bar .navigate-btn-group {
+    width: 90%;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: auto;
+    gap: 10px;
+    padding: 1%;
+    border-radius: 5px;
+}
+
+.product-container .navigation-bar .navigate-btn-group a {
+    text-decoration: none;
+    color: rgb(112, 112, 112);
+}
+
+.product-container .navigation-bar .navigate-btn-group a:hover {
+    color: rgb(236, 41, 15);
+}
+
 .product-content {
     width: 90%;
     min-height: 100vh;
@@ -24,14 +51,16 @@
 }
 
 .product-left-content {
-    width: 25%;
+    width: 20%;
     padding: 1%;
     background-color: white;
+    height: 450px;
+    border-radius: 5px;
 }
 
 .product-left-content ul li {
-    border-bottom: 1px rgb(231, 231, 231) solid;
-    padding: 2% 1%;
+    border-bottom: 1px rgb(212, 212, 212) solid;
+    padding: 3% 1%;
     color: rgb(112, 112, 112);
     list-style: none;
     font-size: 20px;
@@ -45,11 +74,105 @@
 
 .product-left-content ul li:hover {
     font-weight: 600;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(214, 214, 214);
 }
 
 .product-right-content {
+    width: 80%;
+}
+
+.product-upper-content {
+    display: flex;
+}
+
+.product-upper-content .product-banner {
+    width: 66%;
+    height: 450px;
     background-color: white;
-    width: 75%;
-    padding: 2%;
+    margin-right: 5px;
+}
+
+.product-upper-content .products {
+    width: 34%;
+    height: 450px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 5px;
+}
+
+.product-upper-content .products .product {
+    width: 100%;
+    min-height: 49%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.product-upper-content .products .product img {
+    width: 100%;
+    min-height: 100%;
+}
+
+
+.product-banner {
+    overflow: hidden;
+    position: relative;
+}
+
+.product-banner .product-list-banner img {
+    width: 100%;
+    height: 450px;
+    cursor: pointer;
+}
+
+.product-list-banner {
+    display: flex;
+    transition: 0.5s;
+}
+
+.product-banner .product-btn {
+    font-size: 45px;
+    color: #c7c7c7;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-inline: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.product-banner .product-btn:hover {
+    color: #ffffff;
+}
+
+.btn-left {
+    left: 0;
+}
+
+.btn-right {
+    right: 0;
+}
+
+.product-index-banners {
+    position: absolute;
+    bottom: 5px;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.index-item {
+    border: 2px solid #ffffff;
+    background-color: white;
+    width: 20px;
+    margin: 3px;
+}
+
+.active {
+    border: 2px solid red;
 }

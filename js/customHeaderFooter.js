@@ -3,7 +3,7 @@ class MyHeader extends HTMLElement {
         this.innerHTML = `
         <nav class="header-container">
         <div class="left-content">
-            <a href="#" class="logo-content">
+            <a href="index.html" class="logo-content">
                 <img src="img/logo.png" class="logo">
                 <div class="logo-name">Laptop <strong>Fueo</strong></div>
             </a>
@@ -12,12 +12,12 @@ class MyHeader extends HTMLElement {
                     <div class="dropdown">
                         <button class="dropbtn"> <img src="img/headericon3.png">Danh mục sản phẩm</button>
                         <div class="dropdown-content">
-                            <a href="#">Laptop Văn phòng</a>
-                            <a href="#">Laptop Đồ họa</a>
-                            <a href="#">Laptop Gaming</a>
-                            <a href="#">Phím, Chuột, Tai Nghe</a>
-                            <a href="#">Camera, Webcam</a>
-                            <a href="#">Phụ kiện & Phần mềm</a>
+                            <a href="products.html">Laptop Văn phòng</a>
+                            <a href="products.html">Laptop Đồ họa</a>
+                            <a href="products.html">Laptop Gaming</a>
+                            <a href="products.html">Phím, Chuột, Tai Nghe</a>
+                            <a href="products.html">Camera, Webcam</a>
+                            <a href="products.html">Phụ kiện & Phần mềm</a>
                         </div>
                     </div>
                 </li>

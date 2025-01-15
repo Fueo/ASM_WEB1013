@@ -253,11 +253,12 @@
     margin-top: 3px;
     border: none;
     height: 2px;
-    background-color: #dfd7d7;
+    background-color: #c5c5c5;
     margin-inline: 9px;
 }
 
 .or-section .or-text {
-    color: #dfd7d7;
+    color: #c5c5c5;
     font-size: 15px;
+    font-weight: 600;
 }
