@@ -42,13 +42,6 @@
     align-items: center;
 }
 
-.btn-prev,
-.btn-next {
-    color: white;
-    font-size: 50px;
-    cursor: pointer;
-    margin-inline: 10px;
-}
 
 .advertise-content {
     background-color: rgba(255, 255, 255, 0.6);
@@ -61,14 +54,6 @@
     gap: 0px;
 }
 
-/* .advertise {
-    font-family: sans-serif;
-    color: #000;
-    width: 100%;
-    margin-top: 5px;
-    text-align: center;
-    font-size: 40px;
-} */
 
 .advertise-content .left-content {
     display: inline;
