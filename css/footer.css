@@ -1,4 +1,5 @@
 .footer-container {
+    color: #313638;
     background-color: white;
     margin-top: 80px;
     margin-bottom: 80px;
@@ -11,11 +12,11 @@
 }
 
 .column h2 {
-    font-size: 19px;
+    font-size: 16px;
 }
 
 .column p {
-    font-size: 11px;
+    font-size: 12px;
     line-height: 25px;
 }
 
@@ -33,19 +34,19 @@
 }
 
 .column .footer-subtext {
-    font-size: 13px;
+    font-size: 12px;
     line-height: 25px;
     margin-top: 7px;
 }
 
 .column .footer-subtitle {
-    font-size: 19px;
+    font-size: 16px;
     margin-bottom: 7px;
 }
 
 .footer-horizontal-line {
     border: 1px solid rgb(255, 0, 0);
-    width: 110px;
+    width: 5em;
 }
 
 .footer-title {
