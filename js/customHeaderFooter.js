@@ -21,8 +21,10 @@ class MyHeader extends HTMLElement {
                         </div>
                     </div>
                 </li>
-                <li>
-                    <form class="search-container">
+            </ul>
+        </div>
+        <div class="search-group">
+        <form >
                         <input type="text" placeholder="Nhập sản phẩm cần tìm...">
                         <button class="btn-search">
                             <a href="products.html">
@@ -30,14 +32,16 @@ class MyHeader extends HTMLElement {
                             </a>
                         </button>
                     </form>
-                </li>
-            </ul>
-        </div>
+                    </div>
+        
         <div class="right-content">
             <ul>
                 <li><a href="login.html"><img src="img/headericon4.png">Đăng nhập/Đăng ký</a></li>
             </ul>
-            <button class="btn"><img src="img/headericon1.png">Giỏ hàng</button>
+            <button class="btn">
+            <img src="img/headericon1.png">
+            <div>Giỏ hàng</div>
+            </button>
         </div>
     </nav>
         `
