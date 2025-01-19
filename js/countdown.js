@@ -18,5 +18,5 @@ updateCountdown = () => {
     minute.innerHTML = m < 10 ? '0' + m : m;
     second.innerHTML = s < 10 ? '0' + s : s;
 }
-
+updateCountdown();
 setInterval(() => updateCountdown(), 1000);

@@ -193,7 +193,7 @@
 }
 
 .product-content-2 {
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .advertise-container {
@@ -339,7 +339,22 @@
 }
 
 .product-content-3 {
-    margin-top: 30px;
+    margin-top: 50px;
+}
+
+.product-container-3 {
+    position: relative;
+    box-shadow: 3.2px 6.4px 6.4px hsl(0deg 0% 0% / 0.40);
+}
+
+.product-content-3 .present-icon {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+}
+
+.product-content-3 .present-icon img {
+    width: 100px;
 }
 
 .product-content-3 .title,
@@ -356,6 +371,7 @@
     text-shadow: 5px 5px #54d1d1;
     text-align: center;
     pointer-events: none;
+    text-transform: uppercase;
 }
 
 
@@ -369,17 +385,54 @@
 
 }
 
+.product-content-3 .product-tabs {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.product-content-3 .product-tabs .tab {
+    color: #313638;
+    width: 20%;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px 5px 0 0;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    border: none;
+}
+
+.product-content-3 .product-tabs .tab .tab-title {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.product-content-3 .product-tabs .tab .tab-subtitle {
+    font-size: 14px;
+}
+
+.product-tabs .tab-active {
+    color: #fff !important;
+    background-color: #a2102e !important;
+}
 
 .list-product {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    width: 100%;
+    background-color: #a2102e;
+    border: 5px solid #a2102e;
+    border-radius: 0 0 5px 5px;
 }
 
 .product-content-3 .product {
     width: 25%;
-    height: 450px;
+    height: 30em;
     background-color: white;
     border-radius: 5px;
     display: flex;
@@ -389,6 +442,10 @@
     box-shadow: 3.2px 6.4px 6.4px hsl(0deg 0% 0% / 0.40);
 }
 
+
+.product-content-3 .product .product-img {
+    height: 21em;
+}
 
 .product-content-3 .product img {
     width: 100%;
@@ -418,6 +475,117 @@
     font-size: 16px;
     color: #313638;
     text-shadow: 2px 2px #d15493;
+}
+
+.product-content-4 {
+    margin-top: 50px;
+}
+
+.product-content-4 .header-bar {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-content-4 .header-bar .title {
+    font-size: 28px;
+    font-weight: 600;
+    width: 20%;
+    color: #fff;
+    border-radius: 5px 20px 5px 5px;
+    text-transform: uppercase;
+    background: #a2102e;
+    padding: 5px 1%;
+}
+
+.product-content-4 .header-bar .suggests {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 80%;
+    justify-content: end;
+}
+
+.product-content-4 .header-bar .suggests .suggest {
+    color: #fff;
+    font-size: 14px;
+    border: 1px solid #ffffff;
+    border-radius: 25px;
+    padding: 1%;
+    width: fit-content;
+}
+
+.product-container-4 .products {
+    display: flex;
+    width: 100%;
+    border: 1px solid black;
+    height: 25em;
+    gap: 10px;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.product-container-4 .products a {
+    text-decoration: none;
+}
+
+.product-container-4 .product {
+    width: 19%;
+    height: 25em;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.product-container-4 .product .product-img {
+    width: 100%;
+}
+
+.product img {
+    width: 100%;
+}
+
+
+.product .product-img .discount-percent {
+    color: #fff;
+    background-color: #a2102e;
+    width: fit-content;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 5px;
+    padding: 1%;
+    border-radius: 5px;
+}
+
+.product .product-title {
+    text-align: center;
+    font-size: 16px;
+    color: #313638;
+}
+
+.product .product-price {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product .product-price .original-price {
+    font-size: 14px;
+    color: gray;
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+
+.product .product-price .discount-price {
+    font-size: 16px;
+    color: #313638;
+    text-shadow: 2px 1px #d15493;
 }
 
 .mt-20 {
