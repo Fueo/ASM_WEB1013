@@ -29,6 +29,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
+}
+
+.product:hover img {
+    transform: scale(1.01);
+    transition: 0.5s;
 }
 
 
@@ -49,12 +55,17 @@
     margin-left: 5px;
     padding: 1%;
     border-radius: 5px;
+    z-index: 2;
 }
 
 .product .product-title {
     text-align: center;
     font-size: 16px;
     color: #313638;
+}
+
+.product .product-title:hover {
+    color: rgb(236, 41, 15);
 }
 
 .product .product-price {

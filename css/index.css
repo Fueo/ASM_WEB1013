@@ -554,6 +554,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
 }
 
 
@@ -562,8 +563,14 @@
     width: 100%;
 }
 
+
 .product-4 img {
     width: 100%;
+}
+
+.product-4:hover img {
+    transform: scale(1.01);
+    transition: 0.5s;
 }
 
 
@@ -582,6 +589,10 @@
     text-align: center;
     font-size: 16px;
     color: #313638;
+}
+
+.product-4 .product-title:hover {
+    color: rgb(236, 41, 15);
 }
 
 .product-4 .product-price {

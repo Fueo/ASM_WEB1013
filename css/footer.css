@@ -13,12 +13,19 @@
 
 .column h2 {
     font-size: 16px;
+
+}
+
+.footer-subtitle {
+    margin-top: 50px;
 }
 
 .column p {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 25px;
 }
+
+.column p:hover {}
 
 .icon-media {
     margin-top: 15px;
@@ -34,9 +41,14 @@
 }
 
 .column .footer-subtext {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 25px;
     margin-top: 7px;
+    cursor: pointer;
+}
+
+.column .footer-subtext:hover {
+    color: rgb(236, 41, 15);
 }
 
 .column .footer-subtitle {

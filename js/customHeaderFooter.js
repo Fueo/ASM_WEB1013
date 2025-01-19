@@ -62,13 +62,12 @@ class MyFooter extends HTMLElement {
                         <p>Nhận hàng và thanh toán tại nhà</p>
                     </div>
                 </div>
-                </br>
 
                 <h2 class="footer-subtitle">GIỚI THIỆU LAPTOP FUEO</h2>
                 <hr class="footer-horizontal-line">
-                <p class="footer-subtext">Về chúng tôi </br>
-                    Tư vấn mua hàng </br>
-                    Tuyển dụng</p>
+                <p class="footer-subtext">Về chúng tôi </p>
+                    <p class="footer-subtext">Tư vấn mua hàng </p>
+                    <p class="footer-subtext">Tuyển dụng</p>
                 <div class="icon-media">
                     <img src="img/footer8.png">
                     <img src="img/footer5.png">
@@ -84,19 +83,14 @@ class MyFooter extends HTMLElement {
                         <p>1 đổi 1 trong 7 ngày</p>
                     </div>
                 </div>
-                </br>
 
                 <h2 class="footer-subtitle">CHÍNH SÁCH CHUNG</h2>
                 <hr class="footer-horizontal-line">
-                <p class="footer-subtext">
-                    Chính sách trả góp</br>
-                    Chính sách bảo mật</br>
-                    Chính sách giải quyết khiếu nại</br>
-                    Chính sách bảo vệ thông tin cá nhân</br>
-                    Chính sách bảo hành</br>
-                    Chính sách đổi - trả hàng</br>
-                    Chính sách vận chuyển</br>
-                </p>
+                <p class="footer-subtext">Chính sách trả góp</p>
+                <p class="footer-subtext">Chính sách bảo vệ thông tin cá nhân</p>
+                <p class="footer-subtext">Chính sách bảo hành</p>
+                <p class="footer-subtext">Chính sách đổi - trả hàng</p>
+                <p class="footer-subtext">Chính sách vận chuyển</p>
             </div>
 
             <div class="column">
@@ -112,7 +106,7 @@ class MyFooter extends HTMLElement {
                 <h2 class="footer-subtitle">THÔNG TIN KHUYẾN MÃI</h2>
                 <hr class="footer-horizontal-line">
                 <p class="footer-subtext">
-                    Tổng hợp khuyến mãi</br>
+                    Tổng hợp khuyến mãi
                 </p>
             </div>
             <div class="column">
@@ -123,16 +117,13 @@ class MyFooter extends HTMLElement {
                         <p>Tư vấn, giải đáp mọi thắc mắc</p>
                     </div>
                 </div>
-                </br>
 
                 <h2 class="footer-subtitle">HỖ TRỢ KHÁCH HÀNG</h2>
                 <hr class="footer-horizontal-line">
-                <p class="footer-subtext">
-                    Tổng hợp Hotline CSKH, phản ánh. </br>
-                    Lắp đặt phòng net </br>
-                    Thiết bị Mining </br>
-                    Tra cứu bảo hành</br>
-                </p>
+                <p class="footer-subtext">Tổng hợp Hotline CSKH, phản ánh.</p>
+                <p class="footer-subtext">Lắp đặt phòng net</p>
+                <p class="footer-subtext">Thiết bị Mining</p>
+                <p class="footer-subtext">Tra cứu bảo hành</p>
             </div>
         </div>
     </div>
