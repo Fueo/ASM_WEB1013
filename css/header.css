@@ -111,15 +111,23 @@ nav {
     margin-left: -3px;
     border: none;
     background: #d15493;
+    cursor: pointer;
 }
+
+.search-group .btn-search:hover,
+.search-group .btn-search:hover a {
+    background: #b13472;
+}
+
 
 .search-group .btn-search img {
     width: 15px;
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(350deg) brightness(109%) contrast(105%);
 }
 
 .search-group .btn-search a {
     text-decoration: none;
-    color: #313638;
+    color: #fff;
     font-weight: 600;
     display: flex;
     justify-content: center;
@@ -129,7 +137,6 @@ nav {
 .logo {
     width: 5em;
     cursor: pointer;
-
 }
 
 .logo-name {

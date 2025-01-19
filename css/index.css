@@ -338,6 +338,10 @@
     font-weight: 600;
 }
 
+.advertise-content .right-content .btn-advertise:hover {
+    background: #b13472;
+}
+
 .product-content-3 {
     margin-top: 50px;
 }

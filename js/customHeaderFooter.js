@@ -28,7 +28,7 @@ class MyHeader extends HTMLElement {
                         <input type="text" placeholder="Nhập sản phẩm cần tìm...">
                         <button class="btn-search">
                             <a href="products.html">
-                                <img src="img/headericon2.png">Tìm kiếm
+                                <img src="img/headericon5.svg">Tìm kiếm
                             </a>
                         </button>
                     </form>
