@@ -11,13 +11,13 @@ const checkCurrent = () => {
         ProductbtnLeft.style = `display: none`;
     }
     else {
-        ProductbtnLeft.style = `display: inline`;
+        ProductbtnLeft.style = `display: block`;
     }
     if (Productcurrent == Products.length - 5) {
         ProductbtnRight.style = `display: none`;
     }
     else {
-        ProductbtnRight.style = `display: inline`;
+        ProductbtnRight.style = `display: block`;
     }
 }
 

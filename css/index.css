@@ -62,7 +62,6 @@
 }
 
 .product-left-content ul li {
-    color: #313638;
     padding: 3%;
     list-style: none;
     font-size: 14px;
@@ -72,6 +71,11 @@
 .product-left-content ul li img {
     width: 20px;
     margin-right: 15px;
+}
+
+.product-left-content ul li a {
+    text-decoration: none;
+    color: #313638;
 }
 
 .product-left-content ul li:hover {
