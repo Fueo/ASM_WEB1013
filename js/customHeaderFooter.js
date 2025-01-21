@@ -41,6 +41,9 @@ class MyHeader extends HTMLElement {
             <button class="btn">
             <img src="img/headericon1.png">
             <div>Giỏ hàng</div>
+                        <div class="product-added">
+                0
+            </div>
             </button>
         </div>
     </nav>
