@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
 .product-container {
     width: 100%;
     min-height: 100vh;

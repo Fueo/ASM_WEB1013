@@ -5,6 +5,13 @@
     box-sizing: border-box;
 }
 
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+
 .product-container {
     font-size: 14px;
     width: 100%;
@@ -115,7 +122,7 @@
 
 
 .product-content-show {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .list-product {
