@@ -3,7 +3,7 @@ const hour = document.getElementById("hour");
 const minute = document.getElementById("minute");
 const second = document.getElementById("second");
 
-const discountTime = new Date(`february 01 2025 00:00:00`)
+const discountTime = new Date(`february 15 2025 00:00:00`)
 
 updateCountdown = () => {
     const currentTime = new Date();

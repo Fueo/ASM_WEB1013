@@ -1,0 +1,368 @@
+* {
+    margin: 0%;
+    padding: 0;
+    font-family: "Roboto", serif;
+    box-sizing: border-box;
+}
+
+.detail-container {
+    font-size: 14px;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px 5%;
+    background-image: linear-gradient(42deg, #524bff, #a35fc1, #c77683, #db903d);
+    background-size: cover;
+    background-position: center;
+    grid-template-areas:
+        "navbar navbar"
+        "content content";
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+.detail-container .navigation-bar {
+    grid-area: navbar;
+    color: rgb(219, 219, 219);
+}
+
+.detail-container .navigation-bar .navigate-btn-group {
+    height: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: auto;
+    gap: 10px;
+    padding: 1%;
+    border-radius: 5px;
+    box-shadow: 3.2px 6.4px 6.4px hsl(0deg 0% 0% / 0.40);
+}
+
+.detail-container .navigation-bar .navigate-btn-group a {
+    text-decoration: none;
+    color: #313638;
+    font-size: 14px;
+}
+
+.detail-container .navigation-bar .navigate-btn-group a:hover {
+    color: rgb(236, 41, 15);
+}
+
+.detail-content {
+    background-color: white;
+    padding: 1%;
+    border-radius: 5px;
+    box-shadow: 3.2px 6.4px 6.4px hsl(0deg 0% 0% / 0.40);
+    margin-top: 50px;
+    display: grid;
+    grid-area: content;
+    grid-template-areas:
+        "title title title"
+        "image detail detail"
+        "description description description"
+        "showmore showmore showmore";
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-template-columns: 1fr 1.5fr;
+}
+
+.detail-title-group {
+    grid-area: title;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    color: #313638;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.detail-title-group hr .price-group hr {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    border: none;
+    height: 2px;
+    background-color: #dfd7d7;
+}
+
+.detail-image-group {
+    grid-area: image;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-areas:
+        "preview preview preview preview"
+        "preview preview preview preview"
+        "image image image image";
+    position: relative;
+}
+
+.detail-image-previews {
+    grid-area: preview;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail-images {
+    grid-area: image;
+
+}
+
+.detail-image-previews img {
+    width: 100%;
+
+}
+
+.detail-images img {
+    width: 24%;
+}
+
+.detail-images img:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.detail-image-btn {
+    font-size: 28px;
+    color: #313638;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.detail-image-btn:hover {
+    color: rgb(236, 41, 15);
+}
+
+.active {
+    border: 2px solid #d15493;
+}
+
+.btn-left {
+    left: 0;
+}
+
+.btn-right {
+    right: 0;
+}
+
+.detail-content-group {
+    grid-area: detail;
+    color: #313638;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.count-down-group {
+    padding: 1%;
+    background-image: linear-gradient(90deg, #a2102e, #b7383d, #cb554d, #df715e);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.timer {
+    display: flex;
+}
+
+.countdown {
+    display: flex;
+}
+
+.count-down-group .text {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.count-down-group .countdown {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    margin-right: 15px;
+}
+
+.count-down-group .timer {
+    display: flex;
+}
+
+.countdown .timer #day,
+.countdown .timer #hour,
+.countdown .timer #minute,
+.countdown .timer #second {
+    background-color: #313638;
+    border-radius: 5px;
+    padding: 2%;
+}
+
+.price-group {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0 10px 0;
+    align-items: center;
+}
+
+.discount-cost {
+    font-size: 28px;
+    color: #313638;
+    text-shadow: 3px 3px #d15493;
+}
+
+.real-cost {
+    font-size: 16px;
+    color: gray;
+    text-decoration: line-through;
+
+}
+
+.discount-percent {
+    font-size: 14px;
+    color: rgb(255, 0, 0);
+}
+
+.detail-reward-group {
+    margin-left: 20px;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.detail-rewards li::marker {
+    color: #313638 !important;
+    font-size: 16px;
+}
+
+.bold {
+    font-weight: 600;
+    font-size: 16px;
+    padding-right: 50px;
+}
+
+.detail-specifications-group {
+    font-size: 16px;
+}
+
+.detail-specifications-group tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.detail-specifications-group th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.detail-specification {
+    line-height: 2;
+}
+
+.detail-specification {
+    width: 100%;
+}
+
+.btn-buynow {
+    background-color: #9e0c28;
+    padding: 2% 1%;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.detail-btn-group a {
+    text-decoration: none;
+}
+
+.btn-buynow:hover {
+    background-color: #85041d;
+    cursor: pointer;
+}
+
+.btn-addtocart {
+    margin-top: 5px;
+    background-color: #0990df;
+    padding: 2% 1%;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.btn-addtocart:hover {
+    background-color: #0076bb;
+    cursor: pointer;
+}
+
+.detail-description {
+    font-size: 14px;
+    grid-area: description;
+    color: #313638;
+    height: 200px;
+    overflow: hidden;
+}
+
+.description-title {
+    margin-top: 20px;
+}
+
+.description {
+    margin-top: 20px;
+}
+
+.description li {
+    margin-left: 20px;
+    line-height: 1.5;
+}
+
+.description .text {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.description .subtext {
+    font-size: 14px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.description .title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.description .img {
+    text-align: center;
+}
+
+.description img {
+    width: 40%;
+}
+
+.showmore-btn {
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    grid-area: showmore;
+}
+
+.showmore {
+    border-radius: 5px;
+    padding: 8px 10%;
+    color: #0076bb;
+    border: 1px solid #0076bb;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+.showmore:hover {
+    color: rgb(236, 41, 15);
+    cursor: pointer;
+}

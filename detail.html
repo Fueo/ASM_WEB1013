@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/detail.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <script src="js/customHeaderFooter.js"></script>
+    <title>Detail</title>
+</head>
+
+<body>
+    <my-header></my-header>
+    <div class="detail-container">
+        <div class="navigation-bar">
+            <div class="navigate-btn-group">
+                <div class="homepage-btn">
+                    <a href="index.html">Trang chủ</a>
+                    /
+                </div>
+                <div class="products-btn">
+                    <a href="products.html">Laptop Văn Phòng</a>
+                    /
+                </div>
+                <div class="detail-btn">
+                    <a href="">Laptop Gaming MSI Katana 15 B13VFK 676VN</a>
+                </div>
+            </div>
+        </div>
+        <div class="detail-content">
+            <div class="detail-title-group">
+                <div class="detail-title">Laptop Gaming MSI Katana 15 B13VFK 676VN</div>
+                <hr>
+            </div>
+            <div class="detail-image-group">
+                <div class="detail-image-previews">
+                    <img src="img/detail-image1.webp" alt="" class="detail-image-preview">
+                </div>
+                <div class="detail-images">
+                    <img src="img/detail-image1.webp" alt="" class="detail-image detail-image-1 active"
+                        onclick="handleChangeImage(1)">
+                    <img src="img/detail-image2.webp" alt="" class="detail-image detail-image-2"
+                        onclick="handleChangeImage(2)">
+                    <img src="img/detail-image3.webp" alt="" class="detail-image detail-image-3"
+                        onclick="handleChangeImage(3)">
+                    <img src="img/detail-image4.webp" alt="" class="detail-image detail-image-4"
+                        onclick="handleChangeImage(4)">
+                </div>
+                <div class="btns">
+                    <div class="btn-left detail-image-btn">&#10094</div>
+                    <div class="btn-right detail-image-btn">&#10095</div>
+                </div>
+            </div>
+            <div class="detail-content-group">
+                <div class="detail-price-group">
+                    <div class="count-down-group">
+                        <div class="text">F&#128498ash Sale!</div>
+                        <div class="countdown">
+                            <div class="text-countdown">Kết thúc trong: </div>
+                            <div class="timer">
+                                <div id="day"></div>:
+                                <div id="hour"></div>:
+                                <div id="minute"></div>:
+                                <div id="second"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-group">
+                        <div class="discount-cost">25.990.000 VND</div>
+                        <div class="real-cost">30.990.000 VND</div>
+                        <div class="discount-percent">-17%</div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="detail-id mt-20">
+                    <b>Mã sản phẩm:</b> LT.MSI.KTN.B13VFK- 676VN
+                </div>
+                <div class="detail-reward-group mt-20">
+                    <ul class="detail-rewards">
+                        <li class="detail-reward" style="color: red; font-size: 16px; font-weight: 600;">
+                            KHUYẾN MÃI "LAPTOP FUEO" ĐẾN 28.02.2025
+                        </li>
+                        <li class="detail-reward" style="color: rgb(21, 21, 231); font-size: 16px; font-weight: 600;">
+                            Nhận bộ quà tặng cao cấp:
+                        </li>
+                        <li class="detail-reward">
+                            🎁Chuột Không Dây
+                        </li>
+                        <li class="detail-reward">
+                            🎁Miếng lót Chuột cao cấp
+                        </li>
+                        <li class="detail-reward">
+                            🎁Móc khoá cao cấp
+                        </li>
+                    </ul>
+                </div>
+                <div class="detail-specifications-group mt-20">
+                    <div class="detail-specification-title" style="color: red; font-size: 16px; font-weight: 600;">
+                        ⚙ THÔNG SỐ CƠ BẢN:
+                    </div>
+                    <table class="detail-specification">
+                        <tr class="bold">
+                            <th>Thông số</th>
+                            <th>Chi tiết</th>
+                        </tr>
+                        <tr>
+                            <td class="bold">Hãng sản xuất</td>
+                            <td>MSI</td>
+                        </tr>
+                        <tr>
+                            <td class="bold">CPU</td>
+                            <td>Intel Core i7-13620H (3.6GHz~4.9GHz) 10 Cores 16 Threads</td>
+                        </tr>
+                        <tr>
+                            <td class="bold">RAM</td>
+                            <td>16GB (2 x 8GB) DDR5 5200MHz </td>
+                        </tr>
+                        <tr>
+                            <td class="bold">Ổ cứng</td>
+                            <td>1TB NVMe PCIe Gen 4 SSD (2 slots, Nâng cấp cần gắn thêm linh kiện tại TTBH MSI)</td>
+                        </tr>
+                        <tr>
+                            <td class="bold">Card đồ họa</td>
+                            <td>NVIDIA GeForce RTX 4060, GDDR6 8GB</td>
+                        </tr>
+                        <tr>
+                            <td class="bold">Màn hình</td>
+                            <td>
+                                <ul style="list-style-type: none;">
+                                    <li>15.6" FHD (1920x1080)</li>
+                                    <li>144Hz</li>
+                                    <li>IPS-Level</li>
+                                    <li>45% NTSC</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="bold">Hệ điều hành</td>
+                            <td>Windows 11 Home</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="detail-btn-group mt-20">
+                    <a href="checkout.html">
+                        <div class="btn-buynow">MUA NGAY</div>
+                    </a>
+                    <div class="btn-addtocart" onclick="handleAddToCart()">THÊM VÀO GIỎ HÀNG</div>
+                </div>
+            </div>
+            <div class="detail-description">
+                <h2 class="description-title">MÔ TẢ SẢN PHẨM</h2>
+                <div class="description">
+                    <ul>
+                        <b>Đặc điểm nổi bật:</b>
+                        <li>Hiệu năng mạnh mẽ, sẵn sàng chinh phục mọi tựa game AAA</li>
+                        <li>Màn hình 144Hz, tốc độ phản hồi nhanh, hình ảnh mượt mà</li>
+                        <li>Thiết kế gọn nhẹ, di động linh hoạt</li>
+                        <li> Hệ thống tản nhiệt hiệu quả, giữ cho máy luôn mát mẻ</li>
+                    </ul>
+                    <div class="text">
+                        <div class="title">Laptop Gaming MSI Katana 15 B13VFK 676VN: Trải nghiệm đỉnh cao hiệu năng,
+                            thiết kế tối ưu cho
+                            game thủ</div>
+                        <div class="subtext"><b>Laptop Gaming MSI Katana 15 B13VFK 676VN</b> là chiếc laptop gaming
+                            mạnh mẽ,
+                            được thiết kế để
+                            mang
+                            đến trải nghiệm chơi game đỉnh cao. Với bộ vi xử lý Intel Core i7-13620H thế hệ 13 mới nhất,
+                            card đồ họa NVIDIA GeForce RTX 4060, RAM 16GB DDR5 5200MHz và màn hình 144Hz, <b>Laptop
+                                Gaming
+                                MSI
+                                Katana 15 B13VFK 676VN</b> cho phép người dùng chiến game mượt mà ở mức setting cao,
+                            đồng
+                            thời
+                            xử lý
+                            đa nhiệm một cách hiệu quả. Thiết kế gọn nhẹ, di động linh hoạt giúp bạn dễ dàng mang máy đi
+                            bất
+                            cứ đâu.</div>
+                        <div class="img">
+                            <img src="img/detail-image1.webp">
+                        </div>
+                        <div class="title">Hiệu năng mạnh mẽ, cân mọi loại game</div>
+                        <div class="subtext"><b>Bộ vi xử lý mạnh mẽ, card đồ họa tiên tiến: Laptop Gaming MSI Katana 15
+                                B13VFK 676VN</b> được trang bị bộ vi xử lý Intel Core i7-13620H thế hệ 13 mới nhất, sở
+                            hữu 10
+                            nhân, 16 luồng, tốc độ xung nhịp tối đa lên đến 4.9GHz, cùng card đồ họa NVIDIA GeForce RTX
+                            4060 với 8GB GDDR6, cho hiệu năng cực kỳ mạnh mẽ. Với cấu hình này, bạn hoàn toàn có thể
+                            chiến game AAA ở mức setting cao nhất, thậm chí là chơi đa nhiệm các ứng dụng nặng mà không
+                            gặp bất kỳ khó khăn nào.</div>
+                        <div class="img">
+                            <img src="img/detail-image2.webp">
+                        </div>
+                        <div class="subtext"><b>RAM DDR5 tốc độ cao:</b> Với 16GB RAM DDR5 5200MHz, <b>Laptop Gaming MSI
+                                Katana 15
+                                B13VFK 676VN</b> mang đến khả năng xử lý đa nhiệm mượt mà, ứng dụng mở nhanh, không bị
+                            giật lag,
+                            đồng thời hỗ trợ tốt cho các game đòi hỏi dung lượng RAM lớn.<br>
+                            <b>Ổ cứng NVMe PCIe Gen 4 tốc độ cao:</b> Ổ cứng NVMe PCIe Gen 4 1TB giúp máy khởi động và
+                            tải game
+                            cực kỳ nhanh chóng, mang đến trải nghiệm chơi game liền mạch, không giật lag. Với khả năng
+                            nâng cấp ổ cứng, người dùng có thể dễ dàng mở rộng dung lượng lưu trữ.<br>
+                        </div>
+                        <div class="title">Màn hình siêu mượt, hỗ trợ tối đa cho game thủ</div>
+                        <div class="subtext"> Màn hình 144Hz, tốc độ phản hồi nhanh: Laptop Gaming MSI Katana 15
+                            B13VFK
+                            676VN được trang
+                            bị màn hình 15.6 inch Full HD (1920 x 1080) với tốc độ làm tươi 144Hz, giúp hình ảnh
+                            hiển
+                            thị mượt mà, không bị hiện tượng xé hình, cho trải nghiệm chơi game cực kỳ đã mắt. Tốc
+                            độ
+                            phản hồi nhanh giúp game thủ phản ứng nhanh chóng trong các tình huống chiến đấu căng
+                            thẳng.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="showmore-btn">
+                <button class="showmore" onclick="handleShowMore()">Xem thêm &#10095</button>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <script src="js/handleAddToCart.js"></script>
+    <script src="js/imageShowDetail.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/handleAddToCart.js"></script>
+    <script src="js/handleShowMore.js"></script>
+    <my-footer></my-footer>
+</body>
+
+</html>

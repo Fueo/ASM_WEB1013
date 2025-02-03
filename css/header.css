@@ -192,6 +192,14 @@ nav {
     cursor: pointer;
 }
 
+.btn a {
+    color: #313638;
+}
+
+.right-content a {
+    text-decoration: none;
+}
+
 .btn .product-added {
     position: absolute;
     padding: 2% 5%;

@@ -39,11 +39,13 @@ class MyHeader extends HTMLElement {
                 <li><a href="login.html"><img src="img/headericon4.png">Đăng nhập/Đăng ký</a></li>
             </ul>
             <button class="btn">
-            <img src="img/headericon1.png">
-            <div>Giỏ hàng</div>
-                        <div class="product-added">
-                0
-            </div>
+                <img src="img/headericon1.png">
+                <a href="checkout.html">
+                    <div>Giỏ hàng</div>
+                    <div class="product-added">
+                        0
+                    </div>
+                </a>
             </button>
         </div>
     </nav>
