@@ -176,12 +176,12 @@ nav {
     text-decoration: none;
 }
 
-.btn {
+.right-content a .btn {
     display: flex;
     position: relative;
     align-items: center;
     padding: 10px;
-    width: 12em;
+    width: 120px;
     font-size: 16px;
     border: solid 1px #313638;
     color: #313638;
@@ -190,10 +190,6 @@ nav {
     border-radius: 5px;
     font-weight: 600;
     cursor: pointer;
-}
-
-.btn a {
-    color: #313638;
 }
 
 .right-content a {
@@ -211,12 +207,23 @@ nav {
     color: #fff;
 }
 
-.btn:hover {
+a .btn:hover {
     background-color: rgb(175, 175, 175);
 }
 
 
-.btn img {
+a .btn img {
     width: 20px;
     margin-right: 10px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .dropbtn-text {
+        display: none;
+    }
+
+    .search-group input {
+        margin-left: 50px;
+        width: 260px;
+    }
 }

@@ -65,7 +65,7 @@
         "showmore showmore showmore";
     column-gap: 20px;
     row-gap: 20px;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 .detail-title-group {
@@ -95,7 +95,7 @@
         "preview preview preview preview"
         "preview preview preview preview"
         "image image image image";
-    position: relative;
+
 }
 
 .detail-image-previews {
@@ -103,6 +103,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .detail-images {
@@ -128,7 +129,7 @@
     font-size: 28px;
     color: #313638;
     position: absolute;
-    top: 40%;
+    top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
     transition: 0.5s;

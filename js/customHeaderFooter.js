@@ -10,7 +10,10 @@ class MyHeader extends HTMLElement {
             <ul>
                 <li>
                     <div class="dropdown">
-                        <button class="dropbtn"> <img src="img/headericon3.png">Danh mục sản phẩm</button>
+                        <button class="dropbtn"> 
+                        <img src="img/headericon3.png">
+                        <div class="dropbtn-text">Danh mục sản phẩm</div>
+                        </button>
                         <div class="dropdown-content">
                             <a href="products.html">Laptop Văn phòng</a>
                             <a href="products.html">Laptop Đồ họa</a>
@@ -38,15 +41,17 @@ class MyHeader extends HTMLElement {
             <ul>
                 <li><a href="login.html"><img src="img/headericon4.png">Đăng nhập/Đăng ký</a></li>
             </ul>
-            <button class="btn">
-                <img src="img/headericon1.png">
-                <a href="checkout.html">
-                    <div>Giỏ hàng</div>
-                    <div class="product-added">
-                        0
-                    </div>
-                </a>
-            </button>
+             <a href="checkout.html">
+                <button class="btn">
+                    <img src="img/headericon1.png">
+                
+                        <div>Giỏ hàng</div>
+                        <div class="product-added">
+                            0
+                        </div>
+                
+                </button>
+             </a>
         </div>
     </nav>
         `
