@@ -1,3 +1,4 @@
+
 const calculate = (index) => {
     let row = document.querySelector(`.product${index}`);
     let priceElement = row.querySelector(".product-price");
@@ -11,7 +12,7 @@ const calculate = (index) => {
     calculateTotalSum();
 }
 
-calculateTotalSum = () => {
+const calculateTotalSum = () => {
     const productSumElements = document.querySelectorAll(".product-sum");
     let total = 0;
     productSumElements.forEach((element, index) => {
