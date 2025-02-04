@@ -29,7 +29,7 @@
         <div class="checkout-content">
             <div class="checkout-tables">
                 <table class="checkout-table">
-                    <tr class="">
+                    <tr>
                         <th class="image">Sản phẩm</th>
                         <th class="description">Mô Tả</th>
                         <th class="price">Giá</th>
@@ -37,23 +37,71 @@
                         <th class="sum">Tổng</th>
                         <th class="delete">Xóa</th>
                     </tr>
-                    <tr>
+                    <tr class="border-bottom product1 product">
                         <td class="product-image"><img src="img/detail-image1.webp"></td>
                         <td class="product-description">Laptop Gaming MSI Katana 15 B13VFK 676VN</td>
                         <td class="product-price">26,590,000₫</td>
-                        <td class="product-quantity"><input type="number" value="1"></td>
+                        <td class="product-quantity"><input type="number" value="1" min="1" onchange="calculate(1)">
+                        </td>
                         <td class="product-sum">26,590,000₫</td>
-                        <td class="delete-btn"><img src="img/checkout1.svg" class="delete-icon"></td>
+                        <td class="delete-btn"><img src="img/checkout1.svg" class="delete-icon"
+                                onclick="deleteCheckout(1)"></td>
+                    </tr>
+                    <tr class="border-bottom product2 product">
+                        <td class="product-image"><img src="img/checkout2.webp"></td>
+                        <td class="product-description">Chuột Galax Slider-04 RGB Gaming | Đen, Wired, MGS04UX26RG2B0
+                        </td>
+                        <td class="product-price">229,000₫</td>
+                        <td class="product-quantity"><input type="number" value="1" min="1" onchange="calculate(2)">
+                        </td>
+                        <td class="product-sum">229,000₫</td>
+                        <td class="delete-btn"><img src="img/checkout1.svg" class="delete-icon"
+                                onclick="deleteCheckout(2)"></td>
+                    </tr>
+                    <tr class="product3 product">
+                        <td class="product-image"><img src="img/checkout3.webp"></td>
+                        <td class="product-description">Bàn Phím Fuhlen Destroyer Nhập khẩu - Đen
+                        </td>
+                        <td class="product-price">790,000₫</td>
+                        <td class="product-quantity"><input type="number" value="1" min="1" onchange="calculate(3)">
+                        </td>
+                        <td class="product-sum">790,000₫</td>
+                        <td class="delete-btn"><img src="img/checkout1.svg" class="delete-icon"
+                                onclick="deleteCheckout(3)"></td>
                     </tr>
                 </table>
             </div>
             <div class="checkout-btns-group">
-                Thanh toán
+                <div class="sum-group">
+                    <div class="sum-text">Tổng</div>
+                    <div class="sum-value">27,609,000₫</div>
+                </div>
+                <div class="btn-group">
+                    <a href="index.html"><button class="btn-homepage">TIẾP TỤC MUA SẮM</button></a>
+                    <button class="btn-checkout">THANH TOÁN</button>
+                </div>
+                <div class="note-group">
+                    <div class="note-text">Chú thích</div>
+                    <textarea type="text" class="note-input" placeholder="Mô tả rõ hơn về đơn hàng"
+                        resize="none"></textarea>
+                </div>
+                <div class="text">
+                    <div class="title">MUA TRẢ GÓP QUA THẺ TÍN DỤNG</div>
+                    <ul class="info-group">
+                        <li class="info">Ấn Thanh Toán, nhập thông tin</li>
+                        <li class="info">Chọn hình thức: Thanh toán thẻ - Trả góp. Lưu ý: LH nhân viên để kiểm tra tồn
+                            kho sản phẩm trước khi thanh toán</li>
+                        <li class="info">Chọn loại thẻ phù hợp với nhu cầu, nhập thông tin, sau đó tiến hành thanh toán
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
     <my-footer></my-footer>
     <script src="js/handleAddToCart.js"></script>
+    <script src="js/calculateCheckout.js"></script>
+    <script src="js/deleteCheckout.js"></script>
 </body>
 
 </html>
