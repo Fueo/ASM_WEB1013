@@ -13,8 +13,8 @@ updateCountdown = () => {
     const m = Math.floor(diff / 1000 / 60) % 60;
     const s = Math.floor(diff / 1000) % 60;
 
-    day.innerHTML = d + 'd';
-    hour.innerHTML = h < 10 ? '0' + h + 'h' : h + 'h';
+    day.innerHTML = d;
+    hour.innerHTML = h < 10 ? '0' + h : h;
     minute.innerHTML = m < 10 ? '0' + m : m;
     second.innerHTML = s < 10 ? '0' + s : s;
 }

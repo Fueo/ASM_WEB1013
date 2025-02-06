@@ -8,7 +8,7 @@
 .checkout-container {
     font-size: 14px;
     width: 100%;
-    min-height: 100vh;
+    min-height: fit-content;
     padding: 20px 5%;
     background-image: linear-gradient(42deg, #524bff, #a35fc1, #c77683, #db903d);
     background-size: cover;
@@ -184,6 +184,8 @@
     font-size: 18px;
     text-align: right;
     font-weight: 600;
+    color: #313638;
+    text-shadow: 2px 1px #d15493;
 }
 
 .checkout-btns-group .btn-group {

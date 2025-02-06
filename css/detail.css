@@ -62,7 +62,8 @@
         "title title title"
         "image detail detail"
         "description description description"
-        "showmore showmore showmore";
+        "showmore showmore showmore"
+        "comment comment comment";
     column-gap: 20px;
     row-gap: 20px;
     grid-template-columns: 1fr 1fr;
@@ -366,4 +367,67 @@
 .showmore:hover {
     color: rgb(236, 41, 15);
     cursor: pointer;
+}
+
+.comment-group {
+    grid-area: comment;
+}
+
+.comment-group ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.comment-group ul li {
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+}
+
+.comment-group ul li .count {
+    background-color: #ddd;
+    height: fit-content;
+    padding: 2px 4px;
+}
+
+.comment-group .comment-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: #fff;
+    color: #313638;
+    padding: 8px 12px;
+    border: 1px solid #313638;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.comment-group .comment-btn:hover {
+    color: rgb(236, 41, 15);
+    border: 1px solid rgb(236, 41, 15);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.comment-group .comment-btn img {
+    width: 14px;
+    filter: invert(21%) sepia(12%) saturate(320%) hue-rotate(151deg) brightness(87%) contrast(93%);
+}
+
+.comment-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.comment-active {
+    font-weight: 600;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #313638;
+}
+
+.comment-group .comment-title {
+    margin-top: 20px;
 }
