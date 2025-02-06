@@ -471,7 +471,8 @@
     cursor: pointer;
 }
 
-.comment-group ul li .count {
+.comment-group ul li .review-count,
+.comment-group ul li .ask-count {
     background-color: #ddd;
     height: fit-content;
     padding: 2px 4px;

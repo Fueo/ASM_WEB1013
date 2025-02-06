@@ -3,7 +3,7 @@ const clearFillStar = () => {
         document.querySelector(".s-index" + i).src = "img/detail-star1.png";
     }
 }
-let ratingChoice;
+let ratingChoice = 5;
 const changeRatingStar = (index) => {
     clearFillStar();
     for (i = 1; i <= index; i++) {
