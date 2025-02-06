@@ -7,6 +7,7 @@
 
 .detail-container {
     font-size: 14px;
+    color: #313638;
     width: 100%;
     min-height: 100vh;
     padding: 20px 5%;
@@ -373,6 +374,87 @@
     grid-area: comment;
 }
 
+.flex {
+    display: flex;
+    gap: 20px;
+}
+
+.comment-write-group {
+    display: none;
+}
+
+.comment-name-group,
+.comment-email-group {
+    width: 20%;
+}
+
+.comment-name-title,
+.comment-email-title,
+.comment-rating-title,
+.comment-content-title {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.comment-name-content,
+.comment-email-content,
+.comment-content-input {
+    margin-left: 5px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    width: 100%;
+    padding: 7px;
+    resize: none;
+}
+
+.comment-name-content:focus,
+.comment-email-content:focus,
+.comment-content-input:focus {
+    outline: 1px solid #313638;
+}
+
+.comment-name-contentt::placeholder,
+.comment-email-contentt::placeholder {
+    color: #cecbcb;
+}
+
+.comment-rating-group img {
+    width: 30px;
+}
+
+
+.comment-rating-group .star1:hover {
+    opacity: 50%;
+}
+
+.comment-content-group .comment-content-input {
+    height: 100px;
+}
+
+.comment-submit-btn {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.comment-submit-btn button {
+    font-size: 14px;
+    color: white;
+    background-color: #d15493;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.comment-submit-btn button:hover {
+    transition: 0.5s;
+    background-color: #b13472;
+    cursor: pointer;
+}
+
+.comment-submit-btn button:not(:hover) {
+    transition: 0.5s;
+}
+
 .comment-group ul {
     list-style: none;
     display: flex;
@@ -383,6 +465,10 @@
     display: flex;
     justify-content: center;
     gap: 3px;
+}
+
+.comment-group ul li:hover {
+    cursor: pointer;
 }
 
 .comment-group ul li .count {
@@ -404,11 +490,20 @@
     margin-bottom: 10px;
 }
 
+.comment-group .comment-btns {
+    display: flex;
+    gap: 10px;
+}
+
 .comment-group .comment-btn:hover {
     color: rgb(236, 41, 15);
     border: 1px solid rgb(236, 41, 15);
     cursor: pointer;
     transition: 0.5s;
+}
+
+.comment-group .comment-btn:hover img {
+    filter: invert(22%) sepia(79%) saturate(7098%) hue-rotate(5deg) brightness(102%) contrast(88%);
 }
 
 .comment-group .comment-btn img {
@@ -430,4 +525,22 @@
 
 .comment-group .comment-title {
     margin-top: 20px;
+}
+
+.comment-user-group .comment-name {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.comment-user-group .comment-star img {
+    width: 15px;
+}
+
+.comment-user-group {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #ececec;
+    width: fit-content;
+    padding: 5px 50px 5px 15px;
+    border-radius: 20px;
 }

@@ -226,20 +226,85 @@
                 <h2 class="comment-title">
                     Đánh giá sản phẩm
                 </h2>
+                <div class="comment-write-group">
+                    <div class="flex">
+                        <div class="comment-name-group">
+                            <div class="comment-name-title">Tên</div>
+                            <input type="text" class="comment-name-content" placeholder="Nhập tên của bạn">
+                        </div>
+                        <div class="comment-email-group">
+                            <div class="comment-email-title">Email</div>
+                            <input type="email" class="comment-email-content" placeholder="hi@example.com">
+                        </div>
+                    </div>
+                    <div class="comment-rating-group">
+                        <div class="comment-rating-title">Đánh giá</div>
+                        <img src="img/detail-star2.png" class="star1 s-index1" onclick="changeRatingStar(1)">
+                        <img src="img/detail-star2.png" class="star1 s-index2" onclick="changeRatingStar(2)">
+                        <img src="img/detail-star2.png" class="star1 s-index3" onclick="changeRatingStar(3)">
+                        <img src="img/detail-star2.png" class="star1 s-index4" onclick="changeRatingStar(4)">
+                        <img src="img/detail-star2.png" class="star2 s-index5" onclick="changeRatingStar(5)">
+                    </div>
+                    <div class="comment-content-group">
+                        <div class="comment-content-title">Nội dung</div>
+                        <textarea type="text" class="comment-content-input"
+                            placeholder="Viết nội dung đánh giá của bạn"></textarea>
+                    </div>
+                    <div class="comment-submit-btn">
+                        <button class="submit-btn" onclick="handleSubmitComment()">Gửi đánh giá</button>
+                    </div>
+                </div>
                 <div class="comment-section">
+
                     <div class="comment-tab">
                         <ul>
-                            <li class="comment-active">Đánh giá<div class="count">0</div>
+                            <li class="comment-active review-btn-tab">Đánh giá<div class="count">1
+                                </div>
                             </li>
-                            <li>Câu hỏi & trả lời<div class="count">0</div>
+                            <li class="ask-btn-tab">Câu hỏi & trả lời<div class="count">1</div>
                             </li>
                         </ul>
                     </div>
                     <div class="comment-btns">
-                        <button class="comment-btn"><img src="img/detail-icon1.svg">Viết bình luận</button>
+                        <button class="comment-btn review-btn"><img src="img/detail-icon1.svg">Viết đánh giá</button>
+                        <button class="comment-btn ask-btn"><img src="img/detail-icon2.svg">Đặt câu hỏi</button>
                     </div>
                 </div>
                 <hr>
+                <div class="comment-list-group">
+                    <div class="review-tab">
+                        <div class="comment-user-group">
+                            <div class="flex" style="align-items: center; gap: 10px;">
+                                <div class="comment-name">Thiên Hạo</div>
+                                <div class="comment-time">6/2/2025</div>
+                                <div class="comment-star">
+                                    <img src="img/detail-star2.png">
+                                    <img src="img/detail-star2.png">
+                                    <img src="img/detail-star2.png">
+                                    <img src="img/detail-star2.png">
+                                    <img src="img/detail-star2.png">
+                                </div>
+                            </div>
+                            <div class="comment-content">Bộ vi xử lý mạnh mẽ, card đồ họa tiên tiến: Laptop Gaming MSI
+                                Katana 15 B13VFK 676VN được trang bị bộ vi xử lý Intel Core i7-13620H thế hệ 13 mới
+                                nhất, sở hữu 10 nhân, 16 luồng, tốc độ xung nhịp tối đa lên đến 4.9GHz, cùng card đồ họa
+                                NVIDIA GeForce RTX 4060 với 8GB GDDR6, cho hiệu năng cực kỳ mạnh mẽ. Với cấu hình này,
+                                bạn hoàn toàn có thể chiến game AAA ở mức setting cao nhất, thậm chí là chơi đa nhiệm
+                                các ứng dụng nặng mà không gặp bất kỳ khó khăn nào.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ask-tab" style="display: none;">
+                        <div class="comment-user-group">
+                            <div class="flex" style="align-items: center; gap: 10px;">
+                                <div class="comment-name">Thiên Hạo</div>
+                                <div class="comment-time">6/2/2025</div>
+                            </div>
+                            <div class="comment-content">Có giảm giá gì không ạ?
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -248,8 +313,11 @@
     <script src="js/handleAddToCart.js"></script>
     <script src="js/imageShowDetail.js"></script>
     <script src="js/countdown.js"></script>
-    <script src="js/handleAddToCart.js"></script>
     <script src="js/handleShowMore.js"></script>
+    <script src="js/ratingStar.js"></script>
+    <script src="js/changeTabComment.js"></script>
+    <script src="js/handleSubmitComment.js"></script>
+    <script src="js/handleShowHideComment.js"></script>
     <my-footer></my-footer>
 </body>
 
