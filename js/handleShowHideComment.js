@@ -19,8 +19,8 @@ reviewBtn.addEventListener('click', () => {
     }
     document.querySelector('.comment-rating-group').style = `display: inline`;
     document.querySelector('.submit-btn').textContent = `Viết đánh giá`;
-    document.querySelector('.submit-btn').classList.remove('askBtn')
-    document.querySelector('.submit-btn').classList.add('reviewBtn')
+    document.querySelector('.submit-btn').classList.remove('ask')
+    document.querySelector('.submit-btn').classList.add('review')
     document.querySelector('.comment-content-input').placeholder = `Viết nội dung đánh giá của bạn`
 })
 
@@ -37,7 +37,7 @@ askBtn.addEventListener('click', () => {
     }
     document.querySelector('.comment-rating-group').style = `display: none`;
     document.querySelector('.submit-btn').textContent = `Đặt câu hỏi`;
-    document.querySelector('.submit-btn').classList.remove('reviewBtn')
-    document.querySelector('.submit-btn').classList.add('askBtn')
+    document.querySelector('.submit-btn').classList.remove('review')
+    document.querySelector('.submit-btn').classList.add('ask')
     document.querySelector('.comment-content-input').placeholder = `Viết câu hỏi của bạn`
 })

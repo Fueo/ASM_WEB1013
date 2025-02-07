@@ -35,11 +35,13 @@ const handleAddCommentToPage = (type) => {
     let commentEmail = document.querySelector(".comment-email-content").value;
     let commentContent = document.querySelector(".comment-content-input").value;
     let date = new Date();
-    let formattedDate = date.toLocaleDateString("en-GB")
-    if (type === "reviewBtn") {
-        let commentStar = changeCommentStar();
-        document.querySelector(".review-tab").insertAdjacentHTML("afterbegin",
-            `<div class="comment-user-group">
+    let formattedDate = date.toLocaleDateString("en-GB");
+    let commentStar = "";
+    if (type === "review") {
+        commentStar = changeCommentStar();
+    }
+    document.querySelector(`.${type}-tab`).insertAdjacentHTML("afterbegin",
+        `<div class="comment-user-group">
                     <div class="flex" style="align-items: center; gap: 10px;">
                         <div class="comment-name">${commentName}</div>
                         <div class="comment-time">${formattedDate}</div>
@@ -50,24 +52,9 @@ const handleAddCommentToPage = (type) => {
                 <div class="comment-content">${commentContent}
                 </div>
             </div>`
-        )
-        let reviewCount = document.querySelector(".review-count").textContent * 1;
-        document.querySelector(".review-count").innerHTML = `${reviewCount + 1}`
-    }
-    else {
-        document.querySelector(".ask-tab").insertAdjacentHTML("afterbegin",
-            `<div class="comment-user-group">
-                    <div class="flex" style="align-items: center; gap: 10px;">
-                        <div class="comment-name">${commentName}</div>
-                        <div class="comment-time">${formattedDate}</div>
-                    </div>
-                <div class="comment-content">${commentContent}
-                </div>
-            </div>`
-        )
-        let askCount = document.querySelector(".ask-count").textContent * 1;
-        document.querySelector(".ask-count").innerHTML = `${askCount + 1}`
-    }
+    )
+    let Count = document.querySelector(`.${type}-count`).textContent * 1;
+    document.querySelector(`.${type}-count`).innerHTML = `${Count + 1}`
 }
 
 
