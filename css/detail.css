@@ -264,10 +264,11 @@
 
 .detail-specification {
     line-height: 2;
+    width: 100%;
 }
 
-.detail-specification {
-    width: 100%;
+.detail-specification td {
+    padding-left: 5px;
 }
 
 .btn-buynow {

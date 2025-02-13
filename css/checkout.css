@@ -8,7 +8,7 @@
 .checkout-container {
     font-size: 14px;
     width: 100%;
-    min-height: fit-content;
+    min-height: 62vh;
     padding: 20px 5%;
     background-image: linear-gradient(42deg, #524bff, #a35fc1, #c77683, #db903d);
     background-size: cover;
@@ -58,7 +58,7 @@
     grid-template-areas:
         "table btn-group";
     grid-template-columns: minmax(200px, 3fr) minmax(400px, 1fr);
-    margin-top: 20px;
+    margin-top: 50px;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 3.2px 6.4px 6.4px hsl(0deg 0% 0% / 0.40);

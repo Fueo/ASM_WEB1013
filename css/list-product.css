@@ -1,3 +1,10 @@
+* {
+    margin: 0%;
+    padding: 0;
+    font-family: "Roboto", serif;
+    box-sizing: border-box;
+}
+
 .list-product {
     display: flex;
     justify-content: center;
@@ -13,7 +20,7 @@
     align-items: center;
     gap: 1%;
     flex-wrap: wrap;
-
+    min-height: 26em;
 }
 
 .products a {
@@ -22,8 +29,7 @@
 
 .product {
     width: 19%;
-
-    height: 25em;
+    min-height: 25em;
     background-color: white;
     border-radius: 5px;
     display: flex;
@@ -31,15 +37,23 @@
     align-items: center;
     flex-direction: column;
     overflow: hidden;
+    position: relative;
 }
 
 .product:hover img {
-    transform: scale(1.01);
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+
+.product:not(:hover) img {
+    transform: scale(1.0);
     transition: 0.5s;
 }
 
 
 .product .product-img {
+    min-height: 250px;
     width: 100%;
 }
 
@@ -50,7 +64,9 @@
 .product .product-img .discount-percent {
     color: #fff;
     background-color: #a2102e;
+    position: absolute;
     width: fit-content;
+    top: 10px;
     font-size: 16px;
     font-weight: 600;
     margin-left: 5px;
@@ -61,15 +77,12 @@
 
 .product .product-title {
     text-align: center;
-}
-
-.product .product-title a {
-
+    margin-top: 10px;
     font-size: 16px;
     color: #313638;
 }
 
-.product .product-title a:hover {
+.product .product-title:hover {
     color: rgb(236, 41, 15);
 }
 
@@ -93,15 +106,23 @@
     text-shadow: 2px 1px #d15493;
 }
 
+.product .product-group-btn {
+    position: absolute;
+    right: -80px;
+    top: 0px;
+    z-index: 100;
+}
+
 .product:hover .product-group-btn {
-    transform: translate(-110px);
-    transition: 0.5s;
+    transform: translate(-60px);
+    transition: 1s;
 }
 
 .product:not(:hover) .product-group-btn {
-    transform: translate(110px);
+    transform: translate(0px);
     transition: 1s;
 }
+
 
 
 
@@ -111,37 +132,19 @@
     filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(350deg) brightness(109%) contrast(105%);
 }
 
-.product .product-group-btn .cart-btn {
+.product .product-group-btn .cart-btn,
+.product .product-group-btn .detail-btn {
     background: #fff;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: -300px;
-    right: -100px;
     border: none;
     background-color: #d15493;
-    padding: 2%;
+    padding: 10%;
     border-radius: 50%;
     cursor: pointer;
+    margin: 5px;
 }
 
 .product .product-group-btn .cart-btn:hover,
 .product .product-group-btn .detail-btn:hover {
     transform: rotate(360deg);
     transition: 0.8s;
-}
-
-.product .product-group-btn .detail-btn {
-    background: #fff;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    background-color: #d15493;
-    align-items: center;
-    top: -260px;
-    right: -100px;
-    border: none;
-    border-radius: 50%;
-    padding: 2%;
 }

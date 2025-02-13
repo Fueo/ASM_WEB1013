@@ -3,6 +3,9 @@ const calculate = (index) => {
     let row = document.querySelector(`.product${index}`);
     let priceElement = row.querySelector(".product-price");
     let quantityElement = row.querySelector(".product-quantity input");
+    if (!quantityElement.value) {
+        quantityElement.value = 1;
+    }
     let quantityValue = parseInt(quantityElement.value, 10);
     let productPrice = parseInt(priceElement.textContent.replace(/[₫,]/g, ""), 10);
     let sum = quantityValue * productPrice;

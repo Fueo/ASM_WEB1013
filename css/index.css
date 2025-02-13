@@ -569,6 +569,7 @@
     align-items: center;
     flex-direction: column;
     overflow: hidden;
+    position: relative;
 }
 
 
@@ -583,7 +584,7 @@
 }
 
 .product-4:hover img {
-    transform: scale(1.01);
+    transform: scale(1.05);
     transition: 0.5s;
 }
 
@@ -591,12 +592,15 @@
 .product-4 .product-img .discount-percent {
     color: #fff;
     background-color: #a2102e;
+    position: absolute;
     width: fit-content;
+    top: 10px;
     font-size: 16px;
     font-weight: 600;
     margin-left: 5px;
     padding: 1%;
     border-radius: 5px;
+    z-index: 2;
 }
 
 .product-4 .product-title {
@@ -633,13 +637,21 @@
     text-shadow: 2px 1px #d15493;
 }
 
+.product-4 .product-group-btn {
+    position: absolute;
+    right: -80px;
+    top: 0px;
+    z-index: 100;
+}
+
+
 .product-4:hover .product-group-btn {
-    transform: translate(-110px);
-    transition: 0.5s;
+    transform: translate(-60px);
+    transition: 1s;
 }
 
 .product-4:not(:hover) .product-group-btn {
-    transform: translate(110px);
+    transform: translate(0px);
     transition: 1s;
 }
 
@@ -651,19 +663,15 @@
     filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(350deg) brightness(109%) contrast(105%);
 }
 
-.product-4 .product-group-btn .cart-btn {
+.product-4 .product-group-btn .cart-btn,
+.product-4 .product-group-btn .detail-btn {
     background: #fff;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: -300px;
-    right: -100px;
     border: none;
     background-color: #d15493;
-    padding: 2%;
+    padding: 10%;
     border-radius: 50%;
     cursor: pointer;
+    margin: 5px;
 }
 
 .product-4 .product-group-btn .cart-btn:hover,
@@ -672,19 +680,6 @@
     transition: 0.8s;
 }
 
-.product-4 .product-group-btn .detail-btn {
-    background: #fff;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    background-color: #d15493;
-    align-items: center;
-    top: -260px;
-    right: -100px;
-    border: none;
-    border-radius: 50%;
-    padding: 2%;
-}
 
 .list-product-4 .product-btn {
     font-size: 16px;
