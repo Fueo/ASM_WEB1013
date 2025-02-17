@@ -13,6 +13,11 @@
 </head>
 
 <body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v22.0"></script>
+
+
     <my-header></my-header>
     <div class="detail-container">
         <div class="navigation-bar">
@@ -53,7 +58,10 @@
                     <img src="img/detail-image4.webp" alt="" class="detail-image detail-image-4"
                         onclick="handleChangeImage(4)">
                 </div>
-
+                <div class="like-share-group mt-20">
+                    <div class="fb-like" data-href="http://127.0.0.1:5501/detail.html" data-width="500" data-layout=""
+                        data-action="" data-size="" data-share="true"></div>
+                </div>
             </div>
             <div class="detail-content-group">
                 <div class="detail-price-group">
@@ -215,6 +223,13 @@
                             phản hồi nhanh giúp game thủ phản ứng nhanh chóng trong các tình huống chiến đấu căng
                             thẳng.
                         </div>
+                        <div style="text-align: center;">
+                            <iframe width="1045" height="523" src="https://www.youtube.com/embed/Sd_NUKFC3Ew"
+                                title="Đánh giá MSI Katana 15 (2023): Đánh đổi để có hiệu năng và giá tốt | i7 13620H + RTX 4050"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
                     </div>
                 </div>
 
@@ -222,7 +237,7 @@
             <div class="showmore-btn">
                 <button class="showmore" onclick="handleShowMore()">Xem thêm &#x25BC</button>
             </div>
-            <div class="comment-group">
+            <!-- <div class="comment-group">
                 <h2 class="comment-title">
                     Đánh giá sản phẩm
                 </h2>
@@ -304,11 +319,17 @@
                         </div>
                     </div>
                 </div>
+            </div> -->
+            <div class="comment-group">
+                <div class="fb-comments" data-href="http://127.0.0.1:5501/detail.html" data-width="1000"
+                    data-numposts="3">
+                </div>
             </div>
         </div>
     </div>
 
     </div>
+    <script src="https://uhchat.net/code.php?f=10190a"></script>
     <script src="js/handleAddToCart.js"></script>
     <script src="js/imageShowDetail.js"></script>
     <script src="js/countdown.js"></script>
