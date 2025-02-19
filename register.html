@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+    <div class="register-container">
+        <div class="register-header">
+            <div class="register-back-btn"><a href="index.html">&#10094&#10094 Trang chủ</a></div>
+            <div class="register-header-btn-group">
+                <div class="register-header-text">Đã có tài khoản rồi?</div>
+                <button class="register-header-btn"><a href="login.html">Đăng nhập ngay!</a></button>
+            </div>
+        </div>
+        <div class="register-content">
+            <div class="register-form-container">
+                <div class="register-title-group">
+                    <div class="logo-image">
+                        <img src="img/logo.png">
+                    </div>
+                    <div class="register-title">Đăng ký để mua sắm thả ga trên <strong>Laptop Fueo!</strong></div>
+                    <hr>
+                </div>
+
+                <div class="register-form-group">
+                    <div class="gmail-group">
+                        <div class="gmail-title">
+                            Email Đăng Nhập:
+                        </div>
+                        <div class="gmail-input">
+                            <input type="email" placeholder="Nhập Email Đăng Nhập" id="gmail-input">
+                        </div>
+                    </div>
+                    <div class="username-group">
+                        <div class="username-title">
+                            Tên Tài Khoản:
+                        </div>
+                        <div class="username-input">
+                            <input type="text" placeholder="Nhập Tên Tài Khoản" id="username-input">
+                        </div>
+                    </div>
+                    <div class="password-group">
+                        <div class="password-title">
+                            Mật Khẩu:
+                        </div>
+                        <div class="password-input">
+                            <input type="password" placeholder="Nhập Mật Khẩu" id="password-input">
+                        </div>
+                    </div>
+                    <div class="password-group">
+                        <div class="password-title">
+                            Xác Nhận Mật Khẩu:
+                        </div>
+                        <div class="password-input">
+                            <input type="password" placeholder="Nhập Mật Khẩu Đã Nhập" id="re-password-input">
+                        </div>
+                    </div>
+                    <div class="eula-group">
+                        <input type="checkbox" id="eula-btn">
+                        <div class="eula-title">Đồng Ý Với <a href="#">Điều Khoản của Laptop Fueo</a></div>
+                    </div>
+                    <div class="register-btn-group">
+                        <div class="btn-submit-group">
+                            <button class="btn-submit" onclick="validateRegister()">Đăng ký</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <script src="js/validateRegister.js"></script>
+</body>
+
+</html>
