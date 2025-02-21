@@ -139,7 +139,7 @@ class MyFooter extends HTMLElement {
     </div>
 </div>
 <div style='background-color: black; text-align:center; color: white;'> Bản quyền footer và hình ảnh thuộc về tinhocngoisao.com <br>
-Web được thiết kế và xây dựng bởi PS43509 Liêu Thiên Hạo lớp MD20301. Link Project: https://github.com/Fueo/Assignment_WebDevelopment</div>
+Web được thiết kế và xây dựng bởi PS43509 Liêu Thiên Hạo lớp MD20301. Link Project: https://github.com/Fueo/ASM_WEB1013</div>
 `
     }
 }
