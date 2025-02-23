@@ -222,13 +222,12 @@
     padding-left: 10px;
 }
 
-.login-facebook-group img {}
 
 .login-facebook-title,
 .login-google-title {
     padding: 0;
     text-align: center;
-    margin-left: 90px;
+    flex: 1
 }
 
 .login-facebook-group {

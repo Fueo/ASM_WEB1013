@@ -260,6 +260,7 @@
 .countdown .timer #minute,
 .countdown .timer #second {
     background-color: #313638;
+    padding: 1% 10px;
     border-radius: 5px;
 }
 

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/payment.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <script src="js/customHeaderFooter.js"></script>
+</head>
+
+<body>
+    <my-header class="sticky"></my-header>
+    <div class="bg">
+        <div class="payment-container">
+            <div class="navigation-bar">
+                <div class="navigate-btn-group">
+                    <div class="homepage-btn">
+                        <a href="index.html">Trang chủ</a>
+                        /
+                    </div>
+                    <div class="products-btn">
+                        <a href="checkout.html">Giỏ hàng</a>
+                        /
+                    </div>
+                    <div class="products-btn">
+                        <a href="#">Thanh toán</a>
+                    </div>
+                </div>
+            </div>
+            <div class="payment-content">
+                <div class="payment-left-content">
+                    <p>Thông tin giao hàng</p>
+                    <div>Bạn đã có tài khoản? <a href="login.html">Đăng nhập</a> để nhận thêm ưu đãi giảm giá!</div>
+                    <div class="payment-form-group mt-20">
+                        <div>
+                            <input type="text" class="customer-name" placeholder="Họ và tên">
+                        </div>
+
+                        <div>
+                            <input type="email" class="customer-email" placeholder="Email">
+                            <input type="text" class="customer-number" placeholder="Số điện thoại">
+                        </div>
+                        <div> <input type="text" class="customer-address" placeholder="Địa Chỉ"></div>
+                        <div>
+                            <select name="city" id="">
+                                <option value="">Chọn tỉnh / thành</option>
+                                <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+                                <option value="Hà Nội">Hà Nội</option>
+                                <option value="Đà Nẵng">Đà Nẵng</option>
+                            </select>
+                            <select name="district" id="">
+                                <option value="">Chọn quận / huyện</option>
+                                <option value="Huyện Bình Chánh">Huyện Bình Chánh</option>
+                                <option value="Huyện Nhà Bè">Huyện Nhà Bè</option>
+                                <option value="Huyện Cần Giờ">Huyện Cần Giờ</option>
+                                <option value="Huyện Củ Chi">Huyện Củ Chi</option>
+                                <option value="Huyện Hóc Môn">Huyện Hóc Môn</option>
+                                <option value="Quận 1">Quận 1</option>
+                                <option value="Quận 2">Quận 2</option>
+                                <option value="Quận 3">Quận 3</option>
+                                <option value="Quận 4">Quận 4</option>
+                                <option value="Quận 5">Quận 5</option>
+                                <option value="Quận 6">Quận 6</option>
+                                <option value="Quận 7">Quận 7</option>
+                                <option value="Quận 8">Quận 8</option>
+                                <option value="Quận 9">Quận 9</option>
+                                <option value="Quận 10">Quận 10</option>
+                                <option value="Quận 11">Quận 11</option>
+                                <option value="Quận 12">Quận 12</option>
+                                <option value="Quận 12">Quận 12</option>
+                                <option value="Quận Bình Tân">Quận Bình Tân</option>
+                                <option value="Quận Tân Phú">Quận Tân Phú</option>
+                                <option value="Quận Bình Thạnh">Quận Bình Thạnh</option>
+                            </select>
+                            <select name="sub-district" id="">
+                                <option value="">Chọn phường / xã</option>
+                                <option value="Phường 1">Phường 1</option>
+                                <option value="Phường 2">Phường 2</option>
+                                <option value="Phường 3">Phường 3</option>
+                                <option value="Phường 4">Phường 4</option>
+                                <option value="Phường 5">Phường 5</option>
+                                <option value="Phường 6">Phường 6</option>
+                                <option value="Phường 7">Phường 7</option>
+                                <option value="Phường 8">Phường 8</option>
+                                <option value="Phường 9">Phường 9</option>
+                                <option value="Phường 10">Phường 10</option>
+                                <option value="Phường 11">Phường 11</option>
+                                <option value="Phường 12">Phường 12</option>
+                                <option value="Phường 13">Phường 13</option>
+                                <option value="Phường 14">Phường 14</option>
+                                <option value="Phường 15">Phường 15</option>
+                                <option value="Phường 16">Phường 16</option>
+                            </select>
+                        </div>
+                        <div><input type="text" class="customer-note" placeholder="Ghi chú"></div>
+
+                    </div>
+                    <p class="mt-20">Phương thức vận chuyển</p>
+                    <div class="payment-select-group mt-20">
+                        <div class="payment-select-item">
+                            <input type="radio" id="payment-select" name="payment-deliver-select" checked>
+                            <label for="html">Đơn hàng trên 200k</label>
+                            <P>Miễn phí</P>
+                        </div>
+                    </div>
+
+                    <p class="mt-20">Phương thức thanh toán</p>
+                    <div class="payment-select-group mt-20">
+                        <div class="payment-select-item">
+                            <img class="icon" src="img/payment-icon1.png">
+                            <input type="radio" id="payment-select" name="payment-method-select" checked>
+                            <div>
+                                <label>Thanh toán khi giao hàng (COD)</label>
+                                <p class="description">
+                                    Lưu ý: Vui lòng liên hệ nhân viên hỗ trợ kiểm tra tồn kho sản phẩm trước khi thanh
+                                    toán!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="payment-select-item">
+                            <img class="icon" src="img/payment-icon2.png">
+                            <input type="radio" id="payment-select" name="payment-method-select">
+                            <div>
+                                <label>Chuyển khoản qua ngân hàng</label>
+                                <p class="description">STK đặt hàng BP Kinh doanh Online
+                                    Tên: CÔNG TY TNHH TIN HỌC NGÔI SAO LỚN
+                                    Số tài khoản: 166566866 | ACB (HCM)
+                                    Lưu ý: Vui lòng liên hệ nhân viên hỗ trợ kiểm tra tồn kho sản phẩm trước khi thanh
+                                    toán!
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="payment-select-item">
+                            <img class="icon" src="img/payment-icon3.png">
+                            <input type="radio" id="payment-select" name="payment-method-select">
+                            <div>
+                                <label>Thanh toán thẻ - Trả góp</label>
+                                <p class="description">
+                                    Lưu ý: Vui lòng liên hệ nhân viên hỗ trợ kiểm tra tồn kho sản phẩm trước khi thanh
+                                    toán!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="payment-right-content">
+                    <p>Danh sách sản phẩm</p>
+                    <div class="product-list">
+                        <div class="product-item">
+                            <img src="img/detail-image1.webp">
+                            <div class="product-name">Laptop Gaming MSI Katana 15 B13VFK 676VN</div>
+                            <div class="product-price">26,590,000₫</div>
+                            <div class="product-quantity">1</div>
+                        </div>
+                    </div>
+                    <div class="product-list">
+                        <div class="product-item">
+                            <img src="img/checkout2.webp">
+                            <div class="product-name">Chuột Galax Slider-04 RGB Gaming | Đen, Wired, MGS04UX26RG2B0
+                            </div>
+                            <div class="product-price">229,000₫</div>
+                            <div class="product-quantity">1</div>
+                        </div>
+                    </div>
+                    <div class="product-list">
+                        <div class="product-item">
+                            <img src="img/checkout3.webp">
+                            <div class="product-name">Bàn Phím Fuhlen Destroyer Nhập khẩu - Đen</div>
+                            <div class="product-price">790,000₫</div>
+                            <div class="product-quantity">1</div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="sum-group">
+                        <div>
+                            <p class="title">Phí giao hàng:</p>
+                            <div class="price">Miễn phí</div>
+                        </div>
+                        <div>
+                            <p class="title">Tổng cộng: </p>
+                            <div class="price">27,609,000đ</div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="btn-group">
+                        <a href="checkout.html"><button class="btn-homepage">GIỎ HÀNG</button></a>
+                        <a href="#"><button class="btn-checkout">HOÀN TẤT ĐƠN HÀNG</button></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/handleAddToCart.js"></script>
+    <my-footer></my-footer>
+</body>
+
+</html>

@@ -111,7 +111,6 @@ class MyFooter extends HTMLElement {
                         <p>Giá cả hợp lý, nhiều ưu đãi tốt</p>
                     </div>
                 </div>
-                </br>
 
                 <h2 class="footer-subtitle">THÔNG TIN KHUYẾN MÃI</h2>
                 <hr class="footer-horizontal-line">
